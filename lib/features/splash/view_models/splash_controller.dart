@@ -13,8 +13,8 @@ class SplashController extends GetxController {
       // Simulate initialization/loading time
       await Future.delayed(const Duration(seconds: 3));
       
-      // TODO: Navigate to the next screen (e.g., Auth or Home)
-      // Get.offAllNamed(AppRoutes.homeScreen);
+      // Navigate to Onboarding
+      Get.offAllNamed(AppRoutes.languageSelectionScreen);
     } catch (e) {
       print("Error during initialization: $e");
     }

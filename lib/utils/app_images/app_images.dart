@@ -5,6 +5,7 @@ class AppImages {
   static const String appLogo = "assets/icons/app_logo.png";
 
   ///====================== Onboarding =========================
+  static const String muslimFamily = "$basePath/muslim.png";
   static const String onboarding1 = "$basePath/onboardin_1.png";
   static const String onboarding2 = "$basePath/onboardin_2.png";
   static const String onboarding3 = "$basePath/onboardin_3.png";
@@ -24,4 +25,7 @@ class AppImages {
   static const String premiumBarberShop = "$basePath/img.png";
 
   ///====================== Cleaner =========================
+
+  ///====================== Practitioner =========================
+  static const String women = "$basePath/women.png";
 }

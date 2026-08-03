@@ -1,6 +1,14 @@
 class AppIcons {
   static const String basePath = "assets/icons";
 
+  ///=========================Onboarding / Intro======================
+  static const String logo = "$basePath/logo.png";
+  static const String shifaaLogo = "$basePath/shifaa_logo.png";
+  static const String clientIcon = "$basePath/client.svg";
+  static const String practitionerIcon = "$basePath/practitioner.svg";
+  static const String verifiedShield = "$basePath/varified.svg"; // Note the spelling varified
+  static const String worldIcon = "$basePath/world.svg";
+
   ///=========================selectYourRole======================
   static const String consumer = "$basePath/Consumer.svg";
   static const String serviceProvider = "$basePath/service_provider.svg";
@@ -20,7 +28,6 @@ class AppIcons {
   static const String logout = "$basePath/logout.svg";
 
   ///=========================Property owner======================
-  static const String bookingIcon = "$basePath/booking_icon.svg";
   static const String analyticsIcon = "$basePath/analytics_icon.svg";
   static const String addIcon = "$basePath/add.svg";
   static const String guestManagement = "$basePath/guest_management.svg";
@@ -31,7 +38,6 @@ class AppIcons {
   static const String download = "$basePath/download.svg";
   static const String airbnbIcon = "$basePath/airbnb_icon.svg";
   static const String connectIcon = "$basePath/connect_icon.svg";
-  static const String chatIcon = "$basePath/chat_icon.svg";
   static const String imageSendIcon = "$basePath/image_send.svg";
   static const String sendIcon = "$basePath/send_icon.svg";
   static const String cleaningService = "$basePath/cleaning_service.svg";
@@ -64,5 +70,14 @@ class AppIcons {
   ///=========================Nav Bar Icons======================
   static const String chatNavBar = "$basePath/chat.svg";
   static const String earningNavBar = "$basePath/earning.svg";
+  static const String earningIcon = "$basePath/earning.svg";
   static const String bookingSvg = "$basePath/booking_svg.svg";
+  ///========================= Dashboard ======================
+  static const String bookingIcon = "$basePath/booking.svg";
+  static const String chatIcon = "$basePath/chat.svg";
+  static const String hadithIcon = "$basePath/hadith.svg";
+  static const String homeIcon = "$basePath/home.svg";
+  static const String profileIcon = "$basePath/profile.svg";
+  static const String quranIcon = "$basePath/quran.svg";
+  static const String notificationIcon = "$basePath/notification.svg";
 }

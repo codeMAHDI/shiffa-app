@@ -18,28 +18,42 @@ class CustomPillTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      physics: const BouncingScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 8.h),
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 20.w, vertical: 8.h),
+      padding: EdgeInsets.all(4.w),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF3F6F6),
+        borderRadius: BorderRadius.circular(30.r),
+      ),
       child: Row(
+        mainAxisSize: MainAxisSize.min, // To wrap content if not expanded
         children: List.generate(tabs.length, (index) {
           final isSelected = index == selectedIndex;
-          return GestureDetector(
-            onTap: () => onTabSelected(index),
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 4.w),
-              padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 20.w),
-              decoration: BoxDecoration(
-                color: isSelected ? AppColors.primary : const Color(0xFFF6F6F6),
-                borderRadius: BorderRadius.circular(24.r),
-              ),
-              child: Center(
-                child: CustomText(
-                  text: tabs[index],
-                  fontSize: 14,
-                  fontWeight: isSelected ? FontWeight.bold : FontWeight.w600,
-                  color: isSelected ? AppColors.white : AppColors.greyShade,
+          return Expanded(
+            child: GestureDetector(
+              onTap: () => onTabSelected(index),
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 12.h),
+                decoration: BoxDecoration(
+                  color: isSelected ? AppColors.white : Colors.transparent,
+                  borderRadius: BorderRadius.circular(16.r),
+                  boxShadow: isSelected
+                      ? [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.05),
+                            blurRadius: 4,
+                            offset: const Offset(0, 2),
+                          )
+                        ]
+                      : [],
+                ),
+                child: Center(
+                  child: CustomText(
+                    text: tabs[index],
+                    fontSize: 16, // slightly larger text like the image
+                    fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
+                    color: isSelected ? AppColors.primaryGreen : AppColors.greyShade,
+                  ),
                 ),
               ),
             ),

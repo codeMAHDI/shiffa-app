@@ -22,5 +22,8 @@ class AppColors {
   static const Color termsColor = Color(0xff3D8385);
   static const Color orange = Color(0xffFF9800);
   static const Color primary = Color(0xff246BFD);
+  static const Color primaryGreen = Color(0xFF0F7652);
+  static const Color splashBg = Color(0xFF14755B);
+  static const Color splashGold = Color(0xFFD3A449);
   static const Color dotLight = Color(0xffE2E8F0);
 }
